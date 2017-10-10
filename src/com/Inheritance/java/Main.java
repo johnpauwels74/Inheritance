@@ -23,22 +23,56 @@ public class Main {
             System.out.println("3. Done");
             System.out.println("Please enter an option from 1 - 3");
             input = sc.nextLine();
+            try {
+                NumberEntered = Integer.parseInt(input);
+            } catch (Exception e){
+                e.printStackTrace();
+            }
             NumberEntered = Integer.parseInt(input);
 
             switch (NumberEntered) {
                 case 1:
                     System.out.println("Commercial");
                     System.out.println("Please enter the customer name: ");
-                    variable1 = sc.nextLine();
+                    input = sc.nextLine();
+                    try {
+                        variable1 = String.valueOf(input);
+                    } catch (Exception e){
+                    e.printStackTrace();
+                    }
+                    variable1 = String.valueOf(input);
                     System.out.println("Please enter the customer phone number: ");
-                    variable2 = sc.nextLine();
+                    input = sc.nextLine();
+                    try {
+                        variable2 = String.valueOf(input);
+                    } catch (Exception e){
+                        e.printStackTrace();
+                    }
+                    variable2 = String.valueOf(input);
                     System.out.println("Please enter the customer address: ");
-                    variable3 = sc.nextLine();
+                    input = sc.nextLine();
+                    try {
+                        variable3 = String.valueOf(input);
+                    } catch (Exception e){
+                        e.printStackTrace();
+                    }
+                    variable3 = String.valueOf(input);
                     System.out.println("Please enter the square footage of the property: ");
                     input = sc.nextLine();
+                    try {
+                        squarefootage = Double.parseDouble(input);
+                    } catch (Exception e){
+                        e.printStackTrace();
+                    }
                     squarefootage = Double.parseDouble(input);
                     System.out.println("Please type true if there is a multi-property discount: ");
                     input = sc.nextLine();
+                    try {
+                        input = String.valueOf(input);
+                    } catch (Exception e){
+                        e.printStackTrace();
+                    }
+                    input = String.valueOf(input);
                     if (input.equals("true") || input.equals("t") || input.equals("T")) {
                         variable4 = true;
                     } else {
@@ -51,16 +85,45 @@ public class Main {
                 case 2:
                     System.out.println("Residential");
                     System.out.println("Please enter the customer name: ");
-                    variable1 = sc.nextLine();
+                    input = sc.nextLine();
+                    try {
+                        variable1 = String.valueOf(input);
+                    } catch (Exception e){
+                        e.printStackTrace();
+                    }
+                    variable1 = String.valueOf(input);
                     System.out.println("Please enter the customer phone number: ");
-                    variable2 = sc.nextLine();
+                    input = sc.nextLine();
+                    try {
+                        variable2 = String.valueOf(input);
+                    } catch (Exception e){
+                        e.printStackTrace();
+                    }
+                    variable2 = String.valueOf(input);
                     System.out.println("Please enter the customer address: ");
-                    variable3 = sc.nextLine();
+                    input = sc.nextLine();
+                    try {
+                        variable3 = String.valueOf(input);
+                    } catch (Exception e){
+                        e.printStackTrace();
+                    }
+                    variable3 = String.valueOf(input);
                     System.out.println("Please enter the square footage of the property: ");
                     input = sc.nextLine();
+                    try {
+                        squarefootage = Double.parseDouble(input);
+                    } catch (Exception e){
+                        e.printStackTrace();
+                    }
                     squarefootage = Double.parseDouble(input);
                     System.out.println("Please type true if there is a senior citizen discount: ");
                     input = sc.nextLine();
+                    try {
+                        input = String.valueOf(input);
+                    } catch (Exception e){
+                        e.printStackTrace();
+                    }
+                    input = String.valueOf(input);
                     if (input.equals("true") || input.equals("t") || input.equals("T")) {
                         variable4 = true;
                     } else {
